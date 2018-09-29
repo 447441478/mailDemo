@@ -33,8 +33,8 @@ public class MailDemo {
 		Session mailSession = Session.getDefaultInstance(p, new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				String username = "17707471144@163.com"; //邮箱账号 xxx@163.com
-				String password = "wy123456"; //密码
+				String username = "xxx@163.com"; //邮箱账号 xxx@163.com
+				String password = "xxx"; //密码
 				return new PasswordAuthentication( username, password );
 			}
 		});
@@ -44,9 +44,9 @@ public class MailDemo {
 		//1 创建邮件对象，并且设置 由 mailSession 用户进行发送邮件
 		Message message = new MimeMessage(mailSession);
 		//2 设置邮件发送者
-		message.setFrom( new InternetAddress("17707471144@163.com") );
+		message.setFrom( new InternetAddress("xxx@163.com") );
 		//3 设置邮件接收者
-		message.setRecipient( RecipientType.TO, new InternetAddress("447441478@qq.com"));
+		message.setRecipient( RecipientType.TO, new InternetAddress("xxx@qq.com"));
 		//4 设置邮件主题
 		message.setSubject("测试一下");
 		//5 设置邮件内容
@@ -68,8 +68,8 @@ public class MailDemo {
 		Session mailSession = Session.getDefaultInstance(p, new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				String username = "17707471144@163.com"; //邮箱账号 xxx@163.com
-				String password = "wy123456"; //密码
+				String username = "xxx@163.com"; //邮箱账号 xxx@163.com
+				String password = "xxx"; //密码
 				return new PasswordAuthentication( username, password );
 			}
 		});
@@ -79,9 +79,9 @@ public class MailDemo {
 		//1 创建邮件对象，并且设置 由 mailSession 用户进行发送邮件
 		Message message = new MimeMessage(mailSession); 
 		//2 设置邮件发送者
-		message.setFrom( new InternetAddress("17707471144@163.com") );
+		message.setFrom( new InternetAddress("xxx@163.com") );
 		//3 设置邮件接收者
-		message.setRecipient( RecipientType.TO, new InternetAddress("1429054846@qq.com"));
+		message.setRecipient( RecipientType.TO, new InternetAddress("xxx@qq.com"));
 		//4 设置邮件主题
 		message.setSubject("福利");
 		///////////////////下面是开始变化的部分///////////////////////
