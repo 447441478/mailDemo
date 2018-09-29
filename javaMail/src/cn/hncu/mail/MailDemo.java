@@ -95,12 +95,12 @@ public class MailDemo {
 		//第二部分
 		MimeBodyPart bodyPart2 = new MimeBodyPart();
 		bodyPart2.setDataHandler( new DataHandler( new FileDataSource("./imgs/1.jpg" ) ) );
-		bodyPart2.setFileName(MimeUtility.encodeText("美女.gif"));
+		bodyPart2.setFileName(MimeUtility.encodeText("美女1.gif"));
 		
 		//第三部分
 		MimeBodyPart bodyPart3 = new MimeBodyPart();
 		bodyPart3.setDataHandler( new DataHandler( new FileDataSource("./imgs/2.jpg" ) ) );
-		bodyPart3.setFileName(MimeUtility.encodeText("嘿嘿嘿.gif"));
+		bodyPart3.setFileName(MimeUtility.encodeText("美女2.gif"));
 		
 		//按顺序加入到  Multipart 中  
 		Multipart mp = new MimeMultipart();
