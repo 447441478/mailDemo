@@ -42,7 +42,7 @@ public class SendMailThread extends Thread{
 		Session session = Session.getDefaultInstance(p,new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("17707471144@163.com", "wy123456");
+				return new PasswordAuthentication("xxx@163.com", "xxx");
 			}
 		});
 		
@@ -50,7 +50,7 @@ public class SendMailThread extends Thread{
 		Message message = new MimeMessage(session);
 		try {
 			//设置发送者
-			message.setFrom( new InternetAddress("17707471144@163.com") );
+			message.setFrom( new InternetAddress("xxx@163.com") );
 			//设置接收者
 			message.setRecipient( RecipientType.TO, new InternetAddress( ""+user.getEmail() ) );
 			//设置主题
